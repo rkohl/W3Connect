@@ -1,0 +1,12 @@
+
+.DS_Store
+.swiftpm/.DS_Store
+.swiftpm/xcode/.DS_Store
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+.swiftpm/xcode/package.xcworkspace/xcuserdata/ryankohl.xcuserdatad/IDEFindNavigatorScopes.plist
+.swiftpm/xcode/package.xcworkspace/xcuserdata/ryankohl.xcuserdatad/UserInterfaceState.xcuserstate
+.swiftpm/xcode/xcuserdata/ryankohl.xcuserdatad/xcschemes/xcschememanagement.plist
+Package.resolved
+Sources/.DS_Store
+Sources/ContractABI/.DS_Store
+Sources/Core/.DS_Store
