@@ -68,5 +68,8 @@ public extension Blockchain.Node {
     func Contract<T: StaticContract>(type: T.Type, address: Address? = nil) -> T {
         return T(address: address, node: self)
     }
-    
+
+  func Contract<T: DeployedContract>(type: T.Type, address: Address) -> T {
+    return T(address: address, node: self)
+  }
 }

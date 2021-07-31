@@ -26,6 +26,15 @@ public protocol StaticContract: Contract {
     init(address: Address?, node: Blockchain.Node)
 }
 
+/// Static Deployed Contract
+/// A deployed `Contract` where all methods and events are defined statically
+/// - note: Address should never return nil
+public protocol DeployedContract: SolidityFunctionHandler {
+  var address: Address { get }
+  var node: Blockchain.Node { get }
+  var events: [SolidityEvent] { get }
+  init(address: Address, node: Blockchain.Node)
+}
 /// Contract that is dynamically generated from a JSON representation
 ///
 /// Pros: compatible with existing json files
