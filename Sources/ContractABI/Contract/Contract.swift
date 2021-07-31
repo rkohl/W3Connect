@@ -34,6 +34,9 @@ public protocol DeployedContract: SolidityFunctionHandler {
   var node: Blockchain.Node { get }
   var events: [SolidityEvent] { get }
   init(address: Address, node: Blockchain.Node)
+  func name() -> SolidityInvocation
+  func symbol() -> SolidityInvocation
+  func decimals() -> SolidityInvocation
 }
 /// Contract that is dynamically generated from a JSON representation
 ///
