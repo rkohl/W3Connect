@@ -7,7 +7,8 @@
 //
 
 import Foundation
-
+import secp256k1_implementation
+import secp256k1_bindings
 
 
 

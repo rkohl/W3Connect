@@ -4,4 +4,3 @@
 @_exported import secp256k1_bindings
 @_exported import secp256k1_implementation
 
-
