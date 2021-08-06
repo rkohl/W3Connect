@@ -29,14 +29,10 @@ public protocol StaticContract: Contract {
 /// Static Deployed Contract
 /// A deployed `Contract` where all methods and events are defined statically
 /// - note: Address should never return nil
-public protocol DeployedContract: SolidityFunctionHandler {
-  var address: Address { get }
-  var node: Blockchain.Node { get }
-  var events: [SolidityEvent] { get }
+public protocol DeployedContract: ERC20Contract, AnnotatedERC20 {
+
   init(address: Address, node: Blockchain.Node)
-  func name() -> SolidityInvocation
-  func symbol() -> SolidityInvocation
-  func decimals() -> SolidityInvocation
+
 }
 /// Contract that is dynamically generated from a JSON representation
 ///
